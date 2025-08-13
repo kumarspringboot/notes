@@ -55,4 +55,11 @@ For example:     @Qualifier("bluedartCourier")
 **CommandLineRunner** must be a Spring-managed bean to run on application startup
 If you omit @Bean or don’t use @Component on the class, Spring won’t know about it, and the insertion logic inside won’t run.
 
+@**Query** is used to define custom JPQL or native SQL queries directly on repository methods; setting **nativeQuery=true** allows the query to be written in **native SQL specific** to the database dialect.
+
+@**Id** marks a field as the primary key of an entity, while @GeneratedValue configures the strategy for auto-generating the primary key value (such as auto-increment).
+
+@**Param** binds a method parameter to a named parameter in the @Query, making it easy to pass parameters dynamically into queries.
+
+
 
