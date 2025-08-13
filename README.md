@@ -52,4 +52,7 @@ For example:     @Qualifier("bluedartCourier")
     @Order(1)
     public CommandLineRunner commandLineRunner2() {
 
+**CommandLineRunner** must be a Spring-managed bean to run on application startup
+If you omit @Bean or don’t use @Component on the class, Spring won’t know about it, and the insertion logic inside won’t run.
+
 
