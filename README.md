@@ -27,5 +27,16 @@ wishGenerator wishG = run.getBean(wishGenerator.class);
 **@Controller** – Manages incoming web requests, delegates processing to the service layer, and returns responses to the client.@Controller receives HTTP requests, calls the service methods, and returns responses.
 
 
+**@Resource** is a Java EE standard annotation (from javax.annotation or jakarta.annotation) used for dependency injection.
+
+@**Inject** annotation in Spring Boot is part of the JSR-330 standard (Java Dependency Injection specification) and is used to indicate a dependency injection point. It functions very similarly to Spring’s own @Autowired annotation but comes from the Java standard rather than being Spring-specific
+
+The @**Autowired** annotation in Spring Boot is a key mechanism for automatic dependency injection. It tells the Spring framework to automatically find and inject the required beans (objects) into your class without you needing to manually instantiate or wire them
+**Where Can You Use @Autowired?
+****Constructor Injection** (recommended for required dependencies)
+
+**Setter Injection** (for optional dependencies or to enable changing after construction)
+
+**Field Injection** (injects directly into private fields, though less recommended)
 
 
