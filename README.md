@@ -45,4 +45,11 @@ The @**Autowired** annotation in Spring Boot is a key mechanism for automatic de
 For example:     @Qualifier("bluedartCourier")
 
 
+@**Bean** is a method-level annotation that tells Spring a method produces a bean to be managed in the Spring application context.
+
+@**Order** defines the sorting priority of a bean or component, where a lower value means higher precedence during injection into collections or ordered processing.
+    @Bean
+    @Order(1)
+    public CommandLineRunner commandLineRunner2() {
+
 
