@@ -39,4 +39,10 @@ The @**Autowired** annotation in Spring Boot is a key mechanism for automatic de
 
 **Field Injection** (injects directly into private fields, though less recommended)
 
+@**Primary**: Use to designate a default bean for injection when multiple beans of the same type exist, so Spring injects it automatically unless specified otherwise.
+
+@**Qualifier**: Use to explicitly specify which bean to inject when multiple beans of the same type are present, overriding the default or @Primary bean selection.
+For example:     @Qualifier("bluedartCourier")
+
+
 
